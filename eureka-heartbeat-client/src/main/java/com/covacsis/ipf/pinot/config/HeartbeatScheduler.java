@@ -36,7 +36,7 @@ public class HeartbeatScheduler {
     @Value("${heartbeat.cron:0 */5 * * * *}")
     private String heartbeatCron;
 
-    @Value("${eureka.server.url:http://localhost:8083/eureka}")
+    @Value("${eureka.server.url:http://localhost:port/localhostname}")
     private String eurekaServerUrls;
 
     @Value("${service.instances.app.name:eureka-server}")
