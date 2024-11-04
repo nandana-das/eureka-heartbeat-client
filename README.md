@@ -21,7 +21,7 @@ o	Default is 10.
 2.	 Eureka Server URL
 •	eureka.server.url
 o	Specifies the URL of the Eureka server where service instances will register and send heartbeats.
-o	 Default is http://localhost:8083/eureka.
+o	 Default is http://localhost/localhostname.
 3.	Service Instance App Name
 •	service.instances.app.name
 o	Specifies the name of the service instance.
@@ -105,14 +105,14 @@ Steps :
 2.	Endpoint: Use a POST request to /register.
 
 {
-    "ipAddr": "192.168.1.100",
+    "ipAddr": "ipadress",
     "app": "Service-A",
-    "hostName": "service-a-instance",
+    "hostName": "hostname",
     "port": {
-        "$": "8080",
+        "$": "port",
         "@enabled": "true"
     },
-    "healthCheckUrl": "192.168.1.100:8080/actuator/health",
+    "healthCheckUrl": "healthcheckurl",
     "status": "UP",
     "dataCenterInfo": 
 { 
